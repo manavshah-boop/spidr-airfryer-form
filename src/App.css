@@ -32,23 +32,27 @@ body {
   .form-container label {
     display: block;
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #CCCCCC;
+    letter-spacing: 0.2px;
+    font-weight: 500;
   }
   
   /* Inputs */
   .form-container input {
     width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-    border-radius: 4px;
-    border: none;
-    background-color: #2a2a2a;
+    padding: 0.65rem;
+    margin-top: 0.3rem;
+    border-radius: 6px;
+    border: 1px solid #4CA7AF;
+    background-color: #1a1a1a;
     color: #F0F0F0;
+    transition: border-color 0.2s;
   }
   
   .form-container input:focus {
-    outline: 2px solid #4CA7AF;
+    outline: none;
+    border-color: #3b8e95;
   }
   
   /* Submit button */
