@@ -17,14 +17,16 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   }
   
-  /* Form header */
   .form-container h2 {
     color: #4CA7AF;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #4CA7AF;
+    border-bottom: 2px solid #4CA7AF;
     padding-bottom: 0.5rem;
     text-align: center;
+    letter-spacing: 0.5px;
   }
+  
   
   /* Labels */
   .form-container label {
