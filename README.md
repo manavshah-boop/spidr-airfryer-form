@@ -19,13 +19,20 @@ On submit, the form simply prints the entered data to the console as required.
 
 ---
 
+## Deployment
+
+Live App [deployed via Netlify]:
+effortless-babka-1d22e7.netlify.app
+
+---
+
 ## Features
 
-✅ Clean, responsive layout  
-✅ Styled to match Spidr's dark theme and accent colors  
-✅ Raleway typography to match the brand site  
-✅ Auto-formatting for the Spidr PIN input (inserts dashes every 4 digits like a credit card field)  
-✅ Built as embeddable – no header/footer, just the form  
+- Clean, responsive layout
+- Styled to match Spidr's dark theme and accent colors
+- Raleway typography to match the brand site
+- Auto-formatting for the Spidr PIN input (inserts dashes every 4 digits like a credit card field)
+-  Built as embeddable – no header/footer, just the form  
 
 ---
 
@@ -55,3 +62,35 @@ I used CSS variables throughout so colors can be easily updated in one place.
 ```bash
 npm install
 npm run dev
+```
+
+---
+
+## Build for Production
+```bash
+npm run build
+```
+
+---
+
+## How to test the Form
+1. Fill in each field – all are required.
+2. The Spidr PIN field will automatically format into the required ####-####-####-#### format.
+3. Submit the form to see all values printed to the browser console.
+
+---
+
+## Folder Structure
+*src/
+  *components/
+    *FormInput.jsx
+    *InterestForm.jsx
+    *SpidrPinInput.jsx
+  *App.jsx
+  *App.css
+
+---
+
+## Notes
+No routing or complex state management is included.
+Uses semantic, accessible markup where possible.
