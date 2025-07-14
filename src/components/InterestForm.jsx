@@ -14,9 +14,9 @@ export default function InterestForm() {
 
         <FormInput label="First Name" name="firstName" required />
         <FormInput label="Last Name" name="lastName" required />
-        <FormInput label="Phone Number" name="phone" type="tel" required />
+        <FormInput label="Phone Number" name="phone" type="tel" inputMode="tel" required />
         <FormInput label="Email Address" name="email" type="email" required />
-        <FormInput label="Guess the Air Fryer's Cost ($)" name="guessCost" type="number" required />
+        <FormInput label="Guess the Air Fryer's Cost ($)" name="guessCost" type="number" inputMode="numeric" required />
         <FormInput
           label="Very, Very Secret 16-Digit Spidr PIN"
           name="spidrPin"
