@@ -1,7 +1,9 @@
 # Spidr Air Fryer Interest Form
 
 A simple React app built for Spidr Design's coding challenge.  
-This project is a responsive, brand-inspired form intended to be embedded at the bottom of a landing page.
+This project is a responsive, brand-inspired form designed to embed seamlessly at the bottom of a landing page.
+
+---
 
 ## Overview
 
@@ -21,8 +23,8 @@ On submit, the form simply prints the entered data to the console as required.
 
 ## Deployment
 
-Live App [deployed via Netlify]:
-effortless-babka-1d22e7.netlify.app
+**Live App (deployed via Netlify):**  
+[effortless-babka-1d22e7.netlify.app](https://effortless-babka-1d22e7.netlify.app)
 
 ---
 
@@ -32,7 +34,7 @@ effortless-babka-1d22e7.netlify.app
 - Styled to match Spidr's dark theme and accent colors
 - Raleway typography to match the brand site
 - Auto-formatting for the Spidr PIN input (inserts dashes every 4 digits like a credit card field)
--  Built as embeddable – no header/footer, just the form  
+- Built as an embeddable form with no header or footer
 
 ---
 
