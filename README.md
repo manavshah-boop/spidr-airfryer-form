@@ -1,12 +1,57 @@
-# React + Vite
+# Spidr Air Fryer Interest Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app built for Spidr Design's coding challenge.  
+This project is a responsive, brand-inspired form intended to be embedded at the bottom of a landing page.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Spidr is unveiling a new air fryer, and this form collects interest from potential customers.  
+It includes all the requested fields:
 
-## Expanding the ESLint configuration
+- First name
+- Last name
+- Phone number
+- Email address
+- Guess the air fryer's cost ($)
+- Very, Very Secret 16-digit Spidr PIN (formatted as ####-####-####-####)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+On submit, the form simply prints the entered data to the console as required.
+
+---
+
+## Features
+
+✅ Clean, responsive layout  
+✅ Styled to match Spidr's dark theme and accent colors  
+✅ Raleway typography to match the brand site  
+✅ Auto-formatting for the Spidr PIN input (inserts dashes every 4 digits like a credit card field)  
+✅ Built as embeddable – no header/footer, just the form  
+
+---
+
+## Brand Matching Notes
+
+I reviewed Spidr's actual website to match:
+
+- Color palette (dark backgrounds, teal accents)
+- Typography (Raleway with light weights for headings)
+- Layout style (centered sections with minimal, clear design)
+- Subtle transitions and modern form input styling
+
+I used CSS variables throughout so colors can be easily updated in one place.
+
+---
+
+## Tech Stack
+
+- React (Vite)
+- Plain CSS
+- Deployed via Netlify
+
+---
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
