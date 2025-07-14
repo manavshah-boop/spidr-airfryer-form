@@ -1,97 +1,112 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700&display=swap');
+
 /* General page styling */
+:root {
+  --spidr-dark: #121212;
+  --spidr-accent: #4CA7AF;
+  --spidr-light: #d1d0ce;
+  --spidr-input-bg: #1a1a1a;
+  --spidr-input-border: #4CA7AF;
+  --spidr-placeholder: #888888;
+  --spidr-error: #AF4C4C;
+  --spidr-accent-hover: #3b8e95;
+}
+
 body {
-    margin: 0;
-    background-color: #121212;
-    font-family: 'Raleway', sans-serif;
-    color: #F0F0F0;
-  }
-  
-  /* Container for the form */
+  margin: 0;
+  background-color: var(--spidr-dark);
+  font-family: 'Raleway', sans-serif;
+  color: var(--spidr-light);
+  font-weight: 300;
+}
+
+/* Container for the form */
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 4rem auto;
+  background-color: var(--spidr-input-bg);
+  border: 1px solid var(--spidr-accent);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  transition: padding 0.2s;
+}
+
+.form-container h2 {
+  color: var(--spidr-accent);
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--spidr-accent);
+  padding-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+/* Labels */
+.form-container label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--spidr-light);
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.form-container input {
+  width: 100%;
+  padding: 0.65rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid var(--spidr-input-border);
+  background-color: var(--spidr-input-bg);
+  color: var(--spidr-light);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-container input::placeholder {
+  color: var(--spidr-placeholder);
+  opacity: 1;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: var(--spidr-accent-hover);
+}
+
+.form-container input:invalid {
+  border-color: var(--spidr-error);
+}
+
+.form-container button {
+  margin-top: 2rem;
+  background-color: var(--spidr-accent);
+  color: var(--spidr-dark);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-container button:hover {
+  background-color: var(--spidr-accent-hover);
+}
+
+.form-container button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
   .form-container {
-    width: 90%;
-    max-width: 500px;
-    margin: 4rem auto;
-    background-color: #1e1e1e;
-    border: 1px solid #4CA7AF;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    box-sizing: border-box;
-    transition: padding 0.2s;
-  }  
-  
-  .form-container h2 {
-    color: #4CA7AF;
-    font-size: 1.8rem;
-    font-weight: 200;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #4CA7AF;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    letter-spacing: 0.5px;
+    padding: 1rem;
+    margin: 2rem auto;
   }
-  
-  
-  /* Labels */
-  .form-container label {
-    display: block;
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    color: #CCCCCC;
-    letter-spacing: 0.2px;
-    font-weight: 500;
-  }
-  
-  /* Inputs */
-  .form-container input {
-    width: 100%;
-    padding: 0.65rem;
-    margin-top: 0.3rem;
-    border-radius: 6px;
-    border: 1px solid #4CA7AF;
-    background-color: #1a1a1a;
-    color: #F0F0F0;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-  
-  .form-container input::placeholder {
-    color: #888888;
-    opacity: 1;
-  }
-  
-  .form-container input:focus {
-    outline: none;
-    border-color: #3b8e95;
-  }
-  
-  .form-container button {
-    margin-top: 2rem;
-    background-color: #4CA7AF;
-    color: #121212;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    width: 100%;
-    transition: background-color 0.3s, transform 0.1s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  }
-  
-  .form-container button:hover {
-    background-color: #3b8e95;
-  }
-  
-  .form-container button:active {
-    transform: scale(0.98);
-  }
-  
-  @media (max-width: 480px) {
-    .form-container {
-      padding: 1rem;
-      margin: 2rem auto;
-    }
-  }
-  
+}
