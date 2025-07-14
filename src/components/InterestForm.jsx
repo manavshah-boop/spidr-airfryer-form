@@ -1,4 +1,5 @@
 import FormInput from "./FormInput";
+import SpidrPinInput from "./SpidrPinInput";
 
 export default function InterestForm() {
     const handleSubmit = (e) => {
@@ -17,13 +18,12 @@ export default function InterestForm() {
         <FormInput label="Phone Number" name="phone" type="tel" inputMode="tel" required />
         <FormInput label="Email Address" name="email" type="email" required />
         <FormInput label="Guess the Air Fryer's Cost ($)" name="guessCost" type="number" inputMode="numeric" required />
-        <FormInput
+        <SpidrPinInput
           label="Very, Very Secret 16-Digit Spidr PIN"
           name="spidrPin"
-          placeholder="1234-5678-9012-3456"
-          pattern="\d{4}-\d{4}-\d{4}-\d{4}"
           required
         />
+
 
         <button type="submit">Submit</button>
       </form>

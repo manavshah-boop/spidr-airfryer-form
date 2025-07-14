@@ -1,6 +1,8 @@
+/* SPIDR Air Fryer Form Stylesheet */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700&display=swap');
 
-/* General page styling */
+/* CSS Variables for theme colors */
 :root {
   --spidr-dark: #121212;
   --spidr-accent: #4CA7AF;
@@ -20,7 +22,7 @@ body {
   font-weight: 300;
 }
 
-/* Container for the form */
+/* Form Container */
 .form-container {
   width: 90%;
   max-width: 500px;
@@ -55,7 +57,7 @@ body {
   font-weight: 500;
 }
 
-/* Inputs */
+/* Form Inputs */
 .form-container input {
   width: 100%;
   padding: 0.65rem;
@@ -76,10 +78,6 @@ body {
 .form-container input:focus {
   outline: none;
   border-color: var(--spidr-accent-hover);
-}
-
-.form-container input:invalid {
-  border-color: var(--spidr-error);
 }
 
 .form-container button {
@@ -104,6 +102,7 @@ body {
   transform: scale(0.98);
 }
 
+/* Responsive Design */
 @media (max-width: 480px) {
   .form-container {
     padding: 1rem;
