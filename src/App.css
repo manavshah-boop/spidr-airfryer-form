@@ -1,8 +1,14 @@
-/* SPIDR Air Fryer Form Stylesheet */
+/* SPIDR Air Fryer Form Stylesheet
+   Styles for the interest form embed, built to match Spidr's branding and design language.
+*/
 
+/* Import Raleway for consistent typography with Spidr site */
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700&display=swap');
 
-/* CSS Variables for theme colors */
+/* ====================
+   CSS Variables for brand colors
+   Makes it easy to tweak palette in one place
+==================== */
 :root {
   --spidr-dark: #121212;
   --spidr-accent: #4CA7AF;
@@ -14,6 +20,10 @@
   --spidr-accent-hover: #3b8e95;
 }
 
+/* ====================
+   Global Page Styling
+   Sets background and base typography
+==================== */
 body {
   margin: 0;
   background-color: var(--spidr-dark);
@@ -22,7 +32,10 @@ body {
   font-weight: 300;
 }
 
-/* Form Container */
+/* ====================
+   Form Container
+   Centered card-style layout with subtle shadow
+==================== */
 .form-container {
   width: 90%;
   max-width: 500px;
@@ -36,6 +49,7 @@ body {
   transition: padding 0.2s;
 }
 
+/* Heading styling with Spidr accent underline */
 .form-container h2 {
   color: var(--spidr-accent);
   font-size: 1.8rem;
@@ -47,7 +61,10 @@ body {
   letter-spacing: 0.3px;
 }
 
-/* Labels */
+/* ====================
+   Labels
+   Consistent typography for form fields
+==================== */
 .form-container label {
   display: block;
   margin-top: 1rem;
@@ -57,7 +74,10 @@ body {
   font-weight: 500;
 }
 
-/* Form Inputs */
+/* ====================
+   Inputs
+   Subtle shadows and brand-colored borders
+==================== */
 .form-container input {
   width: 100%;
   padding: 0.65rem;
@@ -80,6 +100,10 @@ body {
   border-color: var(--spidr-accent-hover);
 }
 
+/* ====================
+   Submit Button
+   Branded color, subtle hover and active states
+==================== */
 .form-container button {
   margin-top: 2rem;
   background-color: var(--spidr-accent);
@@ -102,7 +126,10 @@ body {
   transform: scale(0.98);
 }
 
-/* Responsive Design */
+/* ====================
+   Responsive Design
+   Adjust padding and margin for mobile
+==================== */
 @media (max-width: 480px) {
   .form-container {
     padding: 1rem;
