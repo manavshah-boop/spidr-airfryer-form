@@ -1,3 +1,5 @@
+import FormInput from "./FormInput";
+
 export default function InterestForm() {
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -9,39 +11,23 @@ export default function InterestForm() {
     return (
       <form className="form-container" onSubmit={handleSubmit}>
         <h2>Air Fryer Interest Form</h2>
-  
-        <label>
-          First Name
-          <input name="firstName" type="text" required />
-        </label>
-  
-        <label>
-          Last Name
-          <input name="lastName" type="text" required />
-        </label>
-  
-        <label>
-          Phone Number
-          <input name="phone" type="tel" required />
-        </label>
-  
-        <label>
-          Email Address
-          <input name="email" type="email" required />
-        </label>
-  
-        <label>
-          Guess the Air Fryer's Cost ($)
-          <input name="guessCost" type="number" required />
-        </label>
-  
-        <label>
-          Very, Very Secret 16-Digit Spidr PIN
-          <input name="spidrPin" type="text" pattern="\d{4}-\d{4}-\d{4}-\d{4}" required placeholder="1234-5678-9012-3456" />
-        </label>
-  
+
+        <FormInput label="First Name" name="firstName" required />
+        <FormInput label="Last Name" name="lastName" required />
+        <FormInput label="Phone Number" name="phone" type="tel" required />
+        <FormInput label="Email Address" name="email" type="email" required />
+        <FormInput label="Guess the Air Fryer's Cost ($)" name="guessCost" type="number" required />
+        <FormInput
+          label="Very, Very Secret 16-Digit Spidr PIN"
+          name="spidrPin"
+          placeholder="1234-5678-9012-3456"
+          pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+          required
+        />
+
         <button type="submit">Submit</button>
       </form>
+
     );
   }
   
