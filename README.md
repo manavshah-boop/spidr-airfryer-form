@@ -81,13 +81,13 @@ npm run build
 ---
 
 ## Folder Structure
-src/
-  * components/
-    * FormInput.jsx
-    * InterestForm.jsx
-    * SpidrPinInput.jsx
-  * App.jsx
-  * App.css
+* src/
+    * components/
+      * FormInput.jsx
+      * InterestForm.jsx
+      * SpidrPinInput.jsx
+    * App.jsx
+    * App.css
 
 ---
 
