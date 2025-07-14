@@ -36,7 +36,7 @@ export default function SpidrPinInput({ label, name, onChange, required }) {
         value={value}
         onChange={handleChange}
         required={required}
-        placeholder="1234-5678-9012-3456"
+        placeholder="####-####-####-####"
         inputMode="numeric"
         pattern="\d{4}-\d{4}-\d{4}-\d{4}"
       />
